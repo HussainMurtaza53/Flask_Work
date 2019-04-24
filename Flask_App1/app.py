@@ -10,15 +10,15 @@ Local_Server = True
 
 app = Flask(__name__)
 
-app.config.update(
-    MAIL_SERVER = 'smtp.gmail.com',
-    MAIL_PORT = '465',
-    MAIL_USE_SSL = True,
-    MAIL_USERNAME = params['User'],
-    MAIL_PASSWORD = params['Password']
-)
+# app.config.update(
+#     MAIL_SERVER = 'smtp.gmail.com',
+#     MAIL_PORT = '465',
+#     MAIL_USE_SSL = True,
+#     MAIL_USERNAME = params['User'],
+#     MAIL_PASSWORD = params['Password']
+# )
 
-mail = Mail(app)
+# mail = Mail(app)
 
 if (Local_Server):
     app.config['SQLALCHEMY_DATABASE_URI'] = params["Local_Uri"]
@@ -49,13 +49,13 @@ def home():
         entry = Contacts(Name=name, People=people, Date=date, Msg=message)
         db.session.add(entry)
         db.session.commit()
-        mail.send_message('Message from' + ' ' + name + ' ' + 'for reserving table',
-                          sender = name,
-                          recipients = [params['User']],
-                          body = 'People :' + ' ' + people + '\n' +
-                                 'Date :' + ' ' + date + '\n' +
-                                 'Message :' + ' ' + message
-                          )
+#         mail.send_message('Message from' + ' ' + name + ' ' + 'for reserving table',
+#                           sender = name,
+#                           recipients = [params['User']],
+#                           body = 'People :' + ' ' + people + '\n' +
+#                                  'Date :' + ' ' + date + '\n' +
+#                                  'Message :' + ' ' + message
+#                           )
     return render_template('index.html', params = params)
 
 if __name__ == '__main__':
