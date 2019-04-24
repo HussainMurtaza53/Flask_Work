@@ -1,0 +1,14 @@
+{
+  "Parameters":
+  {
+    "Local_Server": "True",
+    "Local_Uri": "mysql://root:@localhost/pizza_hut",
+    "Prod_Uri": "mysql://root:@localhost/pizza_hut",
+    "Title": "Pizza Hut",
+    "Heading": "Thin",
+    "Sub_Heading": "Crust Pizza",
+    "Copy_Right": "Pizza_Hut",
+    "User": "Your email-address",
+    "Password": "your password"
+  }
+}
