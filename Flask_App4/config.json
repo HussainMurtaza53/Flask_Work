@@ -1,0 +1,20 @@
+{
+  "Parameters":
+  {
+    "Local_Server": "True",
+    "Local_Uri": "mysql://root:@localhost/studio",
+    "Prod_Uri": "mysql://root:@localhost/studio",
+    "Fb_Url": "https://www.facebook.com/Hussain Murtaza",
+    "Tw_Url": "https://www.twitter.com/Hussain Murtaza",
+    "Gh_Url": "https://www.github.com/HussainMurtaza53",
+    "Title": "Studio",
+    "Heading": "Click And Shoot Studio",
+    "Email": "hussainmurtazaali53@gmail.com",
+    "Phone_No": "+92336-1292991",
+    "Copy_Right": "Click_And_Shoot_Studio",
+    "Price_B": "20000/-",
+    "Price_P": "50000/-",
+    "About": "Hi, my name is Hussain Murtaza. I am a photographer. I like clicking photo of different people. If you want me to come in your any occasion, so please inbox me.",
+    "Name": "Hussain Murtaza Ali"
+  }
+}
